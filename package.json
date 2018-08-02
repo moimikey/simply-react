@@ -1,0 +1,60 @@
+{
+  "name": "simply-react",
+  "version": "1.0.0",
+  "description": "🔭 a simply scalable react component boilerplate",
+  "scripts": {
+    "build:client": "rollup -c",
+    "build": "npm-run-all -s clean build:*",
+    "clean": "rimraf ./dist",
+    "dev": "parcel serve src/index.html",
+    "lint": "standard **/*.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "boilerplate",
+    "react",
+    "parcel",
+    "simple"
+  ],
+  "author": "Michael Scott Hertzberg <mshertzberg@gmail.com>",
+  "license": "WTFPL",
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "react"
+    ],
+    "env": [
+      "es6",
+      "shared-node-browser",
+      "jest"
+    ]
+  },
+  "jest": {
+    "verbose": true
+  },
+  "peerDependencies": {
+    "react": ">=15"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.2.0",
+    "jest": "^23.4.2",
+    "nodemon": "^1.18.3",
+    "npm-run-all": "^4.1.3",
+    "npx": "^10.2.0",
+    "parcel": "^1.9.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.63.5",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "prop-types": "^15.6.2"
+  }
+}
